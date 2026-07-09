@@ -1,6 +1,11 @@
-title: "Stand-in title"
-author: "Dr Prof James 'JayJay' Author"
-paper_id: 12345678
+title: "Two-sided Search in International Markets"
+author: "Jinkins"
 round: 1
-repo: "https://www.github.com/standin"
-dropbox_rel_path: "JPE/Author-12345678/1"
+repo: "https://github.com/JPE-Reproducibility/JPE-Jinkins-20220045"
+paper_id: 20220045
+journal: "JPE"
+paper_slug: "Jinkins-20220045"
+dropbox_rel_path: "JPE/Jinkins-20220045/1"
+package_size_gb: 0.25
+package_max_file_size_gb: 2
+package_max_pkg_size_gb: 10
