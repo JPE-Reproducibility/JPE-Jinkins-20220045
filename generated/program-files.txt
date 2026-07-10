@@ -1,0 +1,240 @@
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/Stata_LFTTD_code/00_do_apparel_shell.do
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/Stata_LFTTD_code/00_do_apparel_shell_abbrev.do
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/Stata_LFTTD_code/01_lfttd_imp_apparel_1996_2011.do
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/Stata_LFTTD_code/02_lfttd_imp_apparel_alpha_id_exp.do
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/Stata_LFTTD_code/03_lfttd_dist_NumSeller_per_buyer.do
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/Stata_LFTTD_code/04_lfttd_dist_NumBuyer_per_seller.do
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/Stata_LFTTD_code/05_lfttd_NumSellerBuyer_transition_matrix.do
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/Stata_LFTTD_code/07_lfttd_duration.do
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/Stata_LFTTD_code/12_lfttd_aggregates_by_country.do
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/Stata_LFTTD_code/13_lfttd_aggregates.do
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/Stata_LFTTD_code/14_lfttd_aggregates_by_related.do
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/Stata_LFTTD_code/A10_lfttd_tenure_of_BuyerSeller.do
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/Stata_LFTTD_code/A7_lfttd_imp_apparel_statistics.do
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/Stata_figure11b_event_study/event_study.do
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/audit_report_values.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/audit_tariff_transition.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/generate_standard_errors_at_saved_parameters.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/generate_table_figure_source_map.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/run_all_replication.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/baseline_moments/compute_lifecycle_profile.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/baseline_moments/compute_size_exit_rates.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/baseline_moments/compute_within_firm_growth_ratio.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/baseline_moments/compute_within_firm_growth_stats.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/baseline_moments/expected_match_revenue.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/baseline_moments/generate_baseline_moments.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/comparison/scripts/generate_comparison_outputs.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/counterfactuals/policy_shock/run_policy_shock_counterfactual.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/estimation/compute_cost_shares.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/estimation/compute_empirical_moments.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/estimation/cum_cov.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/estimation/data_moments_baseline.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/estimation/default_config.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/estimation/estimate_parameters.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/estimation/log1pexp.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/estimation/model_moments.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/estimation/pack_theta.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/estimation/run_estimation.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/estimation/solve_model.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/estimation/stationary_distribution.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/AAR/estimation/unpack_theta.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/Epsilon_CDF_values.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/TSS_mutationgaussian.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/calculate_epsilon_star.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/comparison_plots.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/cum_cov.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/data_moments_LC.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/data_moments_LC_compute.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/data_moments_baseline.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/define_lindex.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/define_parameters.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/define_payoffs.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/define_states.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/function_epsilon_solve.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/intensity_b_no_gamma.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/intensity_s_expected.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/intensity_s_hetero_death.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/main_no_gamma.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/match_death_reg.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/match_death_reg_MP.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/mom_function.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/objective.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/plot_fit.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/regressDeathOnNumPartnersWithTypes.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/report_match_shock_stats.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/search_newbuyer_no_gamma.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/sim_b.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/sim_b_no_interdep.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/sim_growth_moments.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/sim_moments_baseline.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/sim_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/solve_eps_cutoff.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/solve_model_no_gamma.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/std_errors.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/val_b.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/val_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/MP model/calibration_no_gamma_s/x2param.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/cum_cov.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/data_moments_baseline.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/define_lindex.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/define_parameters.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/define_payoffs.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/define_states.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/eval_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/intensity_b.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/intensity_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/main.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/mom_function.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/objective.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/plot_fit.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/search_newbuyer.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/sim_b.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/sim_growth_moments.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/sim_moments_baseline.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/sim_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/solve_model.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/solve_model_old.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/transition_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/val_b.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/val_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/baseline simulation/x2param.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/cum_cov.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/data_moments_baseline.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/define_lindex.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/define_parameters.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/define_payoffs.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/define_states.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/eval_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/intensity_b.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/intensity_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/main.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/mom_function.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/search_newbuyer.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/sim_moments_baseline.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/solve_model.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/transition_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/val_b.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/val_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/steady state summary/x2param.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/cum_cov.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/data_moments_baseline.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/define_lindex.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/define_parameters.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/define_payoffs.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/define_states.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/eval_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/intensity_b.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/intensity_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/mom_function.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/objective.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/plot_fit.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/search_newbuyer.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/sim_moments_baseline.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/solve_dynamics.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/solve_model.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/solve_ss.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/summary_ss.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/transition_dynamics.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/transition_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/val_b.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/val_bt.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/val_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/val_st.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/x2param.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/cum_cov.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/data_moments_baseline.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/define_lindex.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/define_parameters.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/define_payoffs.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/define_states.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/eval_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/intensity_b.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/intensity_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/main.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/mom_function.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/objective.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/plot_fit.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/run_exporter_model.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/search_newbuyer.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/sim_moments_baseline.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/solve_model.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/solve_model_tariff.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/solve_tariff_dynamics.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/transition_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/val_b.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/val_bt.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/val_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/val_st.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/x2param.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/TSS_mutationgaussian.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/cum_cov.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/data_moments_baseline.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/define_lindex.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/define_parameters.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/define_payoffs.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/define_states.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/eval_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/intensity_b.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/intensity_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/mom_function.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/objective.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/plot_fit.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/search_newbuyer.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/sim_moments_baseline.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/solve_model.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/start_estimation_ga.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/std_errors.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/transition_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/val_b.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/val_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_no_NsNb_target/x2param.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/TSS_mutationgaussian.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/cum_cov.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/data_moments_hetero.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/define_lindex.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/define_parameters.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/define_payoffs.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/define_states.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/eval_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/intensity_b.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/intensity_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/match_death_reg.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/mom_function.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/objective.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/plot_fit.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/search_newbuyer.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/sim_moments_hetero.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/solve_model.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/start_estimation_ga.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/std_errors.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/transition_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/val_b.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/val_s.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/heterogeneous_death_haz/sellers_only/x2param.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/build_mechanical_appendix_outputs.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/cum_cov.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/data_moments_mechanical.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/define_lindex.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/define_parameters.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/define_payoffs.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/define_states.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/load_best_mechanical_estimate.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/mechanical_counterfactual_main.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/objective_mechanical.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/search_new_mechanical.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/sim_moments_mechanical.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/solve_model_mechanical.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/solve_model_mechanical_cf.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/start_mechanical.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/summary_mechanical_policy_shock.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/tables_mechanical.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/val_b_mechanical.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/welfare_calc.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/mechanical_model/x2param.m
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/counterfactual_table.tex
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/transition dynamics/counterfactual_table_2026.tex
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/baseline_counterfactuals_July_2024/trump tariff/counterfactual_tariff_table.tex
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/docs/EJTX_2026_replication.tex
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/output/tables/paper/table_06_market_developments_counterfactual.tex
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/output/tables/paper/table_07_trump_section_301_tariff.tex
+/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/output/tables/paper/table_08_mechanical_policy_shock.tex

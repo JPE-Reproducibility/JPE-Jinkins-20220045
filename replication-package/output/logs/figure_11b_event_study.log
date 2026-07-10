@@ -1,0 +1,567 @@
+
+  ___  ____  ____  ____  ____ ®
+ /__    /   ____/   /   ____/      StataNow 19.5
+___/   /   /___/   /   /___/       BE—Basic Edition
+
+ Statistics and Data Science       Copyright 1985-2025 StataCorp LLC
+                                   StataCorp
+                                   4905 Lakeway Drive
+                                   College Station, Texas 77845 USA
+                                   800-782-8272        https://www.stata.com
+                                   979-696-4600        service@stata.com
+
+Stata license: Unlimited-user network, expiring 31 Jan 2027
+Serial number: 401909312988
+  Licensed to: David Jinkins
+               Copenhagen Business School
+
+Notes:
+      1. Stata is running in batch mode.
+      2. Unicode is supported; see help unicode_advice.
+
+. do code/Stata_figure11b_event_study/event_study.do 
+
+. /*
+> Replication code for Figure 11b: event-study estimates and model predictions.
+> 
+> Usage from Stata:
+>     do code/Stata_figure11b_event_study/event_study.do "/path/to/replication_
+> package"
+> 
+> If no path is supplied, the current working directory is treated as the
+> replication-package root.
+> */
+. 
+. version 17
+
+. clear all
+
+. set more off
+
+. set seed 42
+
+. 
+. local root `"`0'"'
+
+. if `"`root'"' == "" {
+.     local root "`c(pwd)'"
+. }
+
+. 
+. local data_dir `"`root'/data/US_ITC_figure11b_event_study"'
+
+. local out_dir  `"`root'/output/figures/paper"'
+
+. cap mkdir `"`root'/output"'
+
+. cap mkdir `"`root'/output/figures"'
+
+. cap mkdir `"`out_dir'"'
+
+. 
+. foreach cmd in ebalance ftools require reghdfe {
+  2.     cap which `cmd'
+  3.     if _rc {
+  4.         di as error "Required Stata command `cmd' is not installed."
+  5.         di as error "Install it from SSC inside Stata, then rerun this scr
+> ipt."
+  6.         exit 199
+  7.     }
+  8. }
+
+. 
+. use `"`data_dir'/merged_apparel_2017_2025_importVQT.dta"', clear
+
+. 
+. preserve
+
+. duplicates drop Country HTSNumber, force
+
+Duplicates in terms of Country HTSNumber
+
+(1,877,817 observations deleted)
+
+. 
+. gen hs6 = substr(HTSNumber, 1, 6)
+
+. gen hs4 = substr(HTSNumber, 1, 4)
+
+. destring hs4, replace
+hs4: all characters numeric; replaced as int
+
+. xi i.hs4
+i.hs4             _Ihs4_6101-6217     (naturally coded; _Ihs4_6101 omitted)
+
+. 
+. ebalance T _I*
+
+
+Data Setup
+Treatment variable:   T
+Covariate adjustment: _Ihs4_6102 _Ihs4_6103 _Ihs4_6104 _Ihs4_6105 _Ihs4_6106 _I
+> hs4_6107 _Ihs4_6108 _Ihs4_6109 _Ihs4_6110 _Ihs4_6111 _Ihs4_6112 _Ihs4_6113 _I
+> hs4_6114 _Ihs4_6115 _Ihs4_6116 _Ihs4_6117 _Ihs4_6201 _Ihs4_6202 _Ihs4_6203 _I
+> hs4_6204 _Ihs4_6205 _Ihs4_6206 _Ihs4_6207 _Ihs4_6208 _Ihs4_6209 _Ihs4_6210 _I
+> hs4_6211 _Ihs4_6212 _Ihs4_6213 _Ihs4_6214 _Ihs4_6215 _Ihs4_6216 _Ihs4_6217 
+
+Optimizing...
+Iteration 1: Max Difference = 103699.024
+Iteration 2: Max Difference = 38148.4813
+Iteration 3: Max Difference = 14033.7842
+Iteration 4: Max Difference = 5162.48291
+Iteration 5: Max Difference = 1898.91357
+Iteration 6: Max Difference = 698.313557
+Iteration 7: Max Difference = 256.637655
+Iteration 8: Max Difference = 94.1546015
+Iteration 9: Max Difference = 34.3815927
+Iteration 10: Max Difference = 12.3954824
+Iteration 11: Max Difference = 4.31566493
+Iteration 12: Max Difference = 1.36506685
+Iteration 13: Max Difference = .330753011
+Iteration 14: Max Difference = .058520688
+Iteration 15: Max Difference = .004243957
+maximum difference smaller than the tolerance level; convergence achieved
+
+
+Treated units: 1845    total of weights: 1845
+Control units: 94782   total of weights: 1845
+
+
+Before: without weighting
+
+             |              Treat              |        Control       
+             |      mean   variance   skewness |      mean   variance 
+-------------+---------------------------------+----------------------
+  _Ihs4_6102 |   .006504    .006465      12.28 |   .008229    .008162 
+  _Ihs4_6103 |    .05149     .04887      4.059 |    .03025     .02933 
+  _Ihs4_6104 |    .07046     .06553      3.357 |    .06227     .05839 
+  _Ihs4_6105 |   .006504    .006465      12.28 |   .008852    .008774 
+  _Ihs4_6106 |     .0103      .0102      9.701 |    .01149     .01136 
+  _Ihs4_6107 |   .009756    .009666      9.975 |    .01094     .01082 
+  _Ihs4_6108 |    .01463     .01443      8.084 |    .01898     .01862 
+  _Ihs4_6109 |    .01789     .01758      7.275 |    .03049     .02956 
+  _Ihs4_6110 |    .05691      .0537      3.825 |    .07529     .06962 
+  _Ihs4_6111 |    .01734     .01705      7.394 |    .01868     .01834 
+  _Ihs4_6112 |    .02927     .02843      5.585 |    .01803     .01771 
+  _Ihs4_6113 |     .0103      .0102      9.701 |   .008556    .008483 
+  _Ihs4_6114 |    .02114      .0207      6.658 |    .02618     .02549 
+  _Ihs4_6115 |    .01247     .01232      8.788 |    .01623     .01596 
+  _Ihs4_6116 |    .01463     .01443      8.084 |    .01435     .01414 
+  _Ihs4_6117 |    .01951     .01914      6.948 |    .01674     .01646 
+  _Ihs4_6201 |    .03794     .03652      4.837 |    .06022      .0566 
+  _Ihs4_6202 |    .03631     .03501      4.957 |    .06157     .05778 
+  _Ihs4_6203 |     .1014     .09113      2.642 |      .088     .08026 
+  _Ihs4_6204 |     .1425      .1223      2.045 |     .1348      .1166 
+  _Ihs4_6205 |    .02114      .0207      6.658 |     .0273     .02656 
+  _Ihs4_6206 |    .01951     .01914      6.948 |    .02516     .02453 
+  _Ihs4_6207 |    .01192     .01179      8.993 |    .01052     .01041 
+  _Ihs4_6208 |    .01463     .01443      8.084 |    .01475     .01453 
+  _Ihs4_6209 |    .01247     .01232      8.788 |    .01212     .01198 
+  _Ihs4_6210 |    .04336      .0415      4.484 |    .03298     .03189 
+  _Ihs4_6211 |     .1382      .1192      2.097 |     .1032     .09255 
+  _Ihs4_6212 |     .0103      .0102      9.701 |    .01239     .01223 
+  _Ihs4_6213 |   .002168    .002164      21.41 |   .002564    .002557 
+  _Ihs4_6214 |   .003252    .003243      17.45 |   .006974    .006925 
+  _Ihs4_6215 |   .001626    .001624      24.74 |    .00364    .003627 
+  _Ihs4_6216 |    .01355     .01337      8.415 |   .009105    .009022 
+  _Ihs4_6217 |    .01409      .0139      8.245 |    .01164      .0115 
+
+             |  Control  
+             |  skewness 
+-------------+----------
+  _Ihs4_6102 |     10.89 
+  _Ihs4_6103 |     5.486 
+  _Ihs4_6104 |     3.623 
+  _Ihs4_6105 |     10.49 
+  _Ihs4_6106 |     9.168 
+  _Ihs4_6107 |     9.403 
+  _Ihs4_6108 |      7.05 
+  _Ihs4_6109 |     5.462 
+  _Ihs4_6110 |     3.219 
+  _Ihs4_6111 |     7.109 
+  _Ihs4_6112 |     7.244 
+  _Ihs4_6113 |     10.67 
+  _Ihs4_6114 |     5.935 
+  _Ihs4_6115 |     7.658 
+  _Ihs4_6116 |     8.167 
+  _Ihs4_6117 |     7.533 
+  _Ihs4_6201 |     3.697 
+  _Ihs4_6202 |     3.648 
+  _Ihs4_6203 |     2.909 
+  _Ihs4_6204 |     2.139 
+  _Ihs4_6205 |     5.801 
+  _Ihs4_6206 |     6.064 
+  _Ihs4_6207 |     9.596 
+  _Ihs4_6208 |     8.051 
+  _Ihs4_6209 |     8.916 
+  _Ihs4_6210 |      5.23 
+  _Ihs4_6211 |     2.609 
+  _Ihs4_6212 |     8.817 
+  _Ihs4_6213 |     19.67 
+  _Ihs4_6214 |     11.85 
+  _Ihs4_6215 |     16.48 
+  _Ihs4_6216 |     10.34 
+  _Ihs4_6217 |     9.107 
+
+
+After:  _webal as the weighting variable
+
+             |              Treat              |        Control       
+             |      mean   variance   skewness |      mean   variance 
+-------------+---------------------------------+----------------------
+  _Ihs4_6102 |   .006504    .006465      12.28 |   .006507    .006465 
+  _Ihs4_6103 |    .05149     .04887      4.059 |    .05144      .0488 
+  _Ihs4_6104 |    .07046     .06553      3.357 |    .07041     .06545 
+  _Ihs4_6105 |   .006504    .006465      12.28 |   .006511    .006469 
+  _Ihs4_6106 |     .0103      .0102      9.701 |     .0103     .01019 
+  _Ihs4_6107 |   .009756    .009666      9.975 |   .009754    .009659 
+  _Ihs4_6108 |    .01463     .01443      8.084 |    .01464     .01443 
+  _Ihs4_6109 |    .01789     .01758      7.275 |    .01797     .01764 
+  _Ihs4_6110 |    .05691      .0537      3.825 |    .05696     .05371 
+  _Ihs4_6111 |    .01734     .01705      7.394 |    .01734     .01704 
+  _Ihs4_6112 |    .02927     .02843      5.585 |    .02924     .02839 
+  _Ihs4_6113 |     .0103      .0102      9.701 |    .01029     .01018 
+  _Ihs4_6114 |    .02114      .0207      6.658 |    .02115      .0207 
+  _Ihs4_6115 |    .01247     .01232      8.788 |    .01247     .01232 
+  _Ihs4_6116 |    .01463     .01443      8.084 |    .01463     .01441 
+  _Ihs4_6117 |    .01951     .01914      6.948 |     .0195     .01912 
+  _Ihs4_6201 |    .03794     .03652      4.837 |    .03806     .03661 
+  _Ihs4_6202 |    .03631     .03501      4.957 |    .03647     .03514 
+  _Ihs4_6203 |     .1014     .09113      2.642 |     .1013     .09102 
+  _Ihs4_6204 |     .1425      .1223      2.045 |     .1425      .1222 
+  _Ihs4_6205 |    .02114      .0207      6.658 |    .02115      .0207 
+  _Ihs4_6206 |    .01951     .01914      6.948 |    .01952     .01914 
+  _Ihs4_6207 |    .01192     .01179      8.993 |    .01192     .01177 
+  _Ihs4_6208 |    .01463     .01443      8.084 |    .01463     .01441 
+  _Ihs4_6209 |    .01247     .01232      8.788 |    .01246      .0123 
+  _Ihs4_6210 |    .04336      .0415      4.484 |    .04332     .04145 
+  _Ihs4_6211 |     .1382      .1192      2.097 |     .1381       .119 
+  _Ihs4_6212 |     .0103      .0102      9.701 |     .0103     .01019 
+  _Ihs4_6213 |   .002168    .002164      21.41 |   .002168    .002164 
+  _Ihs4_6214 |   .003252    .003243      17.45 |   .003291    .003281 
+  _Ihs4_6215 |   .001626    .001624      24.74 |   .001649    .001646 
+  _Ihs4_6216 |    .01355     .01337      8.415 |    .01354     .01336 
+  _Ihs4_6217 |    .01409      .0139      8.245 |    .01408     .01388 
+
+             |  Control  
+             |  skewness 
+-------------+----------
+  _Ihs4_6102 |     12.28 
+  _Ihs4_6103 |     4.061 
+  _Ihs4_6104 |     3.358 
+  _Ihs4_6105 |     12.27 
+  _Ihs4_6106 |     9.702 
+  _Ihs4_6107 |     9.976 
+  _Ihs4_6108 |     8.081 
+  _Ihs4_6109 |     7.258 
+  _Ihs4_6110 |     3.823 
+  _Ihs4_6111 |     7.395 
+  _Ihs4_6112 |     5.588 
+  _Ihs4_6113 |     9.705 
+  _Ihs4_6114 |     6.657 
+  _Ihs4_6115 |     8.785 
+  _Ihs4_6116 |     8.086 
+  _Ihs4_6117 |      6.95 
+  _Ihs4_6201 |     4.829 
+  _Ihs4_6202 |     4.945 
+  _Ihs4_6203 |     2.643 
+  _Ihs4_6204 |     2.046 
+  _Ihs4_6205 |     6.656 
+  _Ihs4_6206 |     6.945 
+  _Ihs4_6207 |     8.997 
+  _Ihs4_6208 |     8.086 
+  _Ihs4_6209 |     8.791 
+  _Ihs4_6210 |     4.486 
+  _Ihs4_6211 |     2.098 
+  _Ihs4_6212 |       9.7 
+  _Ihs4_6213 |     21.41 
+  _Ihs4_6214 |     17.34 
+  _Ihs4_6215 |     24.56 
+  _Ihs4_6216 |     8.419 
+  _Ihs4_6217 |     8.248 
+
+. rename _w w_entropy
+
+. 
+. keep Country HTSNumber T w*
+
+. tempfile weights
+
+. save `weights'
+file /tmp/St343307.000002 saved as .dta format
+
+. restore
+
+. 
+. preserve
+
+. drop if Year > 2018
+(1,536,030 observations deleted)
+
+. 
+. collapse (sum) m_val, by(Country)
+
+. gsort -m_val
+
+. label var m_val "Total Import Values (mil) from 2017:1 to 2018:12"
+
+. gen rank = _n
+
+. tempfile rank
+
+. save `rank'
+file /tmp/St343307.000004 saved as .dta format
+
+. restore
+
+. 
+. merge m:1 Country using `rank', gen(_m)
+
+    Result                      Number of obs
+    -----------------------------------------
+    Not matched                           666
+        from master                       666  (_m==1)
+        from using                          0  (_m==2)
+
+    Matched                         1,973,778  (_m==3)
+    -----------------------------------------
+
+. tab Country if _m != 3
+
+                            Country |      Freq.     Percent        Cum.
+------------------------------------+-----------------------------------
+                Antigua and Barbuda |         13        1.95        1.95
+           Central African Republic |          1        0.15        2.10
+                               Chad |          7        1.05        3.15
+French Southern and Antarctic Lands |         11        1.65        4.80
+                         Gaza Strip |          9        1.35        6.16
+                          Gibraltar |          2        0.30        6.46
+                            Grenada |         10        1.50        7.96
+                      Guinea-Bissau |         14        2.10       10.06
+                               Iraq |         35        5.26       15.32
+                         Kazakhstan |         95       14.26       29.58
+                             Kosovo |        429       64.41       93.99
+                         Martinique |         15        2.25       96.25
+                         Mozambique |         16        2.40       98.65
+                              Palau |          4        0.60       99.25
+                   Pitcairn Islands |          2        0.30       99.55
+                        Timor-Leste |          3        0.45      100.00
+------------------------------------+-----------------------------------
+                              Total |        666      100.00
+
+. drop if rank > 10
+(1,378,675 observations deleted)
+
+. 
+. drop if T == 0 & Country == "China"
+(16,807 observations deleted)
+
+. 
+. collapse (sum) m_val (sum) m_q1 (mean) m_p, by(Country rank HTSNumber Year T 
+> hs8)
+
+. rename m_p ref_m_p
+
+. gen m_p = m_val / m_q1
+(177 missing values generated)
+
+. 
+. replace m_val = m_val / 7 * 12 if Year == 2025
+(8,849 real changes made)
+
+. 
+. gen event_date = 2019
+
+. gen event_time = Year - event_date
+
+. 
+. egen ht = group(HTSNumber Year)
+
+. egen id = group(Country HTSNumber)
+
+. 
+. gsort id Year
+
+. tsset id Year
+
+Panel variable: id (unbalanced)
+ Time variable: Year, 2017 to 2025, but with gaps
+         Delta: 1 unit
+
+. 
+. gen lm_p = 100 * log(m_p)
+(177 missing values generated)
+
+. gen lm_val = 100 * log(m_val)
+(177 missing values generated)
+
+. 
+. egen event_time_pos = group(event_time)
+
+. 
+. gen sum_et = 0
+
+. sum event_time_pos
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+event_time~s |     83,174    5.043571    2.561985          1          9
+
+. local tmax = r(max)
+
+. forval i = 2/`tmax' {
+  2.     gen et_`i' = (T == 1 & event_time_pos == `i')
+  3.     qui replace sum_et = sum_et + et_`i'
+  4. }
+
+. 
+. merge m:1 Country HTSNumber using `weights', gen(m_w)
+
+    Result                      Number of obs
+    -----------------------------------------
+    Not matched                        82,097
+        from master                         0  (m_w==1)
+        from using                     82,097  (m_w==2)
+
+    Matched                            83,174  (m_w==3)
+    -----------------------------------------
+
+. drop if m_w == 2
+(82,097 observations deleted)
+
+. 
+. local y = "val"
+
+. local w = "entropy"
+
+. local rankcap = 5
+
+. 
+. preserve
+
+. drop if rank > `rankcap'
+(27,780 observations deleted)
+
+. 
+. reghdfe lm_`y' et_* [pw=w_entropy], a(id ht) cluster(hs8 Country)
+(dropped 3512 singleton observations)
+(MWFE estimator converged in 12 iterations)
+Warning: VCV matrix was non-positive semi-definite; adjustment from Cameron, Ge
+> lbach & Miller applied.
+warning: missing F statistic; dropped variables due to collinearity or too few 
+> clusters
+
+HDFE Linear regression                            Number of obs   =     51,784
+Absorbing 2 HDFE groups                           F(   8,      4) =          .
+Statistics robust to heteroskedasticity           Prob > F        =          .
+                                                  R-squared       =     0.9884
+                                                  Adj R-squared   =     0.9803
+Number of clusters (hs8)     =        662         Within R-sq.    =     0.0466
+Number of clusters (Country) =          5         Root MSE        =    38.7320
+
+                            (Std. err. adjusted for 5 clusters in hs8 Country)
+------------------------------------------------------------------------------
+             |               Robust
+      lm_val | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+        et_2 |   2.215485   4.003542     0.55   0.609     -8.90013     13.3311
+        et_3 |  -14.65472   6.890482    -2.13   0.101    -33.78577    4.476321
+        et_4 |  -45.45395   14.68092    -3.10   0.036    -86.21472   -4.693182
+        et_5 |  -43.79154   13.23613    -3.31   0.030    -80.54094   -7.042147
+        et_6 |   -58.7639   13.80405    -4.26   0.013    -97.09007   -20.43772
+        et_7 |  -61.04093   14.16471    -4.31   0.013    -100.3685    -21.7134
+        et_8 |  -62.92276    13.5275    -4.65   0.010    -100.4811   -25.36439
+        et_9 |   -94.8566   13.99958    -6.78   0.002    -133.7257   -55.98752
+       _cons |   10.72753   9.476678     1.13   0.321    -15.58395      37.039
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+          id |      7751        7751           0    *|
+          ht |     13519       13519           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+
+. 
+. gen b_target = .
+(55,394 missing values generated)
+
+. gen se_target = .
+(55,394 missing values generated)
+
+. qui sum event_time_pos
+
+. local tmax = r(max)
+
+. qui forval i = 2/`tmax' {
+
+. 
+. collapse (mean) b_* se_*, by(event_time event_time_pos Year)
+
+. mvencode b_* se_*, mv(0) override
+    b_target: 1 missing value recoded
+   se_target: 1 missing value recoded
+
+. 
+. gen b_target_hi = b_target + 1.96 * se_target
+
+. gen b_target_lo = b_target - 1.96 * se_target
+
+. 
+. merge 1:1 Year using `"`data_dir'/model_prediction.dta"'
+(variable Year was int, now float to accommodate using data's values)
+
+    Result                      Number of obs
+    -----------------------------------------
+    Not matched                             1
+        from master                         1  (_merge==1)
+        from using                          0  (_merge==2)
+
+    Matched                                 8  (_merge==3)
+    -----------------------------------------
+
+. drop if Year == 2025
+(1 observation deleted)
+
+. 
+. local ylab "-100(20)0"
+
+. local v "Log Value"
+
+. local xlab "2017(1)2024"
+
+. 
+. set scheme s2color
+
+. twoway ///
+>     (rspike b_target_hi b_target_lo Year, lw(vthin) lc(gs6)) ///
+>     (scatter b_target Year, msize(medium) ms(oh) mcolor(red)) ///
+>     (scatter model_prediction Year, ms(Th) msize(medium) mcolor(blue)), ///
+>     legend(order(2 "Event Study Estimates" 3 "Model Predictions") size(vsmall
+> ) region(lstyle(none)) ring(0) pos(5)) ///
+>     xtitle("Year", size(small)) ///
+>     ytitle("Percent", size(small)) ///
+>     xlabel(`xlab', labsize(small) nogrid) ///
+>     ylabel(`ylab', labsize(small) nogrid) ///
+>     xline(2019, lpattern(dash) lcolor(gs8) lw(vthin)) ///
+>     yline(0, lpattern(shortdash) lcolor(sky)) ///
+>     title("`v'", size(small)) ///
+>     graphregion(color(white)) plotregion(color(white))
+(note:  named style sky not found in class color, default attributes used)
+
+. 
+. graph export `"`out_dir'/figure_11b_event_study_china_vs_other_exporters.png"
+> ', replace width(1600)
+(file /home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_pa
+> ckage/output/figures/paper/figure_11b_event_study_china_vs_other_exporters.pn
+> g not found)
+file /home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_pac
+> kage/output/figures/paper/figure_11b_event_study_china_vs_other_exporters.png
+>  written in PNG format
+
+. restore
+
+. 
+end of do-file

@@ -1,0 +1,131 @@
+Replication audit values
+Root: /home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package
+
+
+ PARAMETER ESTIMATES: 
+ buyer search cost scalar     = 0.00916
+ seller search cost scalar    = 0.00916
+ buyer network parameter      = 0.32029
+ seller network parameter     = 0.23048
+ share of high-type sellers   = 0.03039
+ high type seller cost adv.   = 0.45423
+ buyer type dispersion        = 7.42782
+ seller to buyer ratio        = 4.20323
+ cross-store elasticity       = 2.43171
+
+ EXOGENOUSLY FIXED PARAMETERS:  
+ buyer search cost exponent   = 2.00000
+ seller search cost exponent  = 2.00000
+ seller bargaining parameter  = 0.50000
+ cross-product elasticity     = 4.35000
+
+ MECH MODEL COMPARISON OBJECTIVE FUNCTION = 6745.74799
+
+ OBJECTIVE FUNCTION = 10461.72797
+BASELINE_REPORTED_SAVED_FIT 10461.7279704665
+BASELINE_REPORTED_REEVALUATED_FIT 10461.7279704665
+BASELINE_REPORTED_DIFF 0
+
+MECHANICAL_SOURCE Optimization_2026_0209_0723_Run100of100.mat
+MECHANICAL_SAVED_FVAL 6721.82148097029
+MECHANICAL_REEVALUATED_FIT 6721.82148097044
+MECHANICAL_DIFF 1.48247636388987e-10
+
+HETERO_SAVED_FULL_OBJECTIVE 10867.1680543969
+HETERO_REEVALUATED_FULL_OBJECTIVE 10867.1680543969
+HETERO_FULL_DIFF 0
+HETERO_SAVED_OLD_OBJECTIVE 10804.1347330437
+HETERO_REEVALUATED_OLD_OBJECTIVE 10804.1347330437
+HETERO_OLD_DIFF 0
+HETERO_AVG_MATCH_DEATH 0.774
+HETERO_REG_COEF -0.00872425891853406
+HETERO_DELTA2 0.528658383350848
+
+AAR_SAVED_FVAL 2.57670673710858e-20
+AAR_REEVALUATED_FVAL 2.57670673710858e-20
+AAR_DIFF 0
+AAR_THETA 2.15071714528368 0.307116467481846 1.35289480290285 0.555193178570928
+AAR_MAX_ABS_MOMENT_DIFF 1.19733001291422e-10
+
+
+ PARAMETER ESTIMATES: 
+ buyer search cost scalar     = 0.00904
+ seller search cost scalar    = 0.00204
+ buyer network parameter      = 0.00000
+ share of high-type sellers   = 0.03406
+ high type seller cost adv.   = 0.05590
+ buyer type dispersion        = 6.52239
+ seller to buyer ratio        = 6.75791
+ cross-store elasticity       = 1.87707
+ arrival rate of match shocks = 4.00000
+ Match shock scale            = 0.04143
+ Fixed cost (frac of tot surp)= 0.00005
+
+ EXOGENOUSLY FIXED PARAMETERS:  
+ buyer search cost exponent   = 2.00000
+ seller search cost exponent  = 2.00000
+ seller bargaining parameter  = 0.50000
+ cross-product elasticity     = 1.87707
+
+ ENDOGENOUS VARIABLES:  
+Market tightness (Theta S)   = 0.11260
+ Market tightness (Theta B)   = 0.99986
+ active sellers per buyer     = 4.49270
+ seller search high           = 19.75372
+ seller search low            = 1.55116
+ buyer average search         = 1.65238
+ match death reg coef         = -0.00261
+
+ OBJECTIVE FUNCTION = 11522.24676
+
+ OLD OBJECTIVE FUNCTION = 10983.05534
+MP_MATCH_SHOCK_SOURCE /home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/baseline_counterfactuals_July_2024/MP model/Results2026/Baseline_MP/results/se_results_est_eta.mat
+MP_MATCH_SHOCK_X 0.009038151664477 0 0.00204163122552426 0.034058168327833 0.0559029929723989 6.52239094245822 6.75791247529339 1.87707470981516 0.0414283075035937 0.00149162865412426 
+MP_MATCH_SHOCK_SAVED_OUT 11522.2467639421
+MP_MATCH_SHOCK_REEVALUATED_OUT 11522.2467639423
+MP_MATCH_SHOCK_DIFF 2.05545802600682e-10
+MP_MATCH_SHOCK_SAVED_OUT_OLD 10983.0553372476
+MP_MATCH_SHOCK_REEVALUATED_OUT_OLD 10983.05534
+MP_MATCH_SHOCK_OLD_DIFF 2.7524492907105e-06
+
+
+ PARAMETER ESTIMATES: 
+ buyer search cost scalar     = 0.00711
+ seller search cost scalar    = 0.00186
+ buyer network parameter      = 0.00000
+ share of high-type sellers   = 0.03415
+ high type seller cost adv.   = 0.05509
+ buyer type dispersion        = 5.92073
+ seller to buyer ratio        = 8.06395
+ cross-store elasticity       = 1.86865
+ arrival rate of match shocks = 4.00000
+ Match shock scale            = 0.00000
+ Fixed cost (frac of tot surp)= 0.00007
+
+ EXOGENOUSLY FIXED PARAMETERS:  
+ buyer search cost exponent   = 2.00000
+ seller search cost exponent  = 2.00000
+ seller bargaining parameter  = 0.50000
+ cross-product elasticity     = 1.86865
+
+ ENDOGENOUS VARIABLES:  
+Market tightness (Theta S)   = 0.11605
+ Market tightness (Theta B)   = 0.99982
+ active sellers per buyer     = 4.57784
+ seller search high           = 19.35434
+ seller search low            = 1.52866
+ buyer average search         = 2.00050
+ match death reg coef         = -0.00000
+
+ OBJECTIVE FUNCTION = 11892.48910
+
+ OLD OBJECTIVE FUNCTION = 11007.42660
+MP_NO_DISPERSION_SOURCE /home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/baseline_counterfactuals_July_2024/MP model/Results2026/No_dispersion_MP/results/se_results_est_eta.mat
+MP_NO_DISPERSION_X 0.00710659521827582 0 0.00185835339710173 0.034147987253252 0.0550879354200356 5.92072946752918 8.06394530705426 1.8686540921449 1e-06 0.00182809422569718 
+MP_NO_DISPERSION_SAVED_OUT 11892.4891006442
+MP_NO_DISPERSION_REEVALUATED_OUT 11892.4891006443
+MP_NO_DISPERSION_DIFF 1.16415321826935e-10
+MP_NO_DISPERSION_SAVED_OUT_OLD 11007.4266006442
+MP_NO_DISPERSION_REEVALUATED_OUT_OLD 11007.4266
+MP_NO_DISPERSION_OLD_DIFF -6.44198735244572e-07
+

@@ -1,0 +1,749 @@
+EJTX JPE replication package
+Mode: fast
+Root: /home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package
+Started: 24-Jun-2026 11:23:11
+
+Collecting disclosed-data figures and tables...
+Generating Figure 1 from public BEA/WTO data...
+Generating Figure 4 from public Department of Commerce data...
+Writing paper-display CSVs for disclosed-data Tables 1-4...
+Collecting baseline model outputs...
+Generating Figure 8 from baseline model fit code...
+Starting parallel pool (parpool) using the 'LocalProfile1' profile ...
+Connected to parallel pool with 8 workers.
+Generating Figure 9 from steady-state model artifacts...
+Generating Figure 10 from baseline life-cycle simulation artifacts...
+Generating baseline counterfactual outputs...
+Starting parallel pool (parpool) using the 'LocalProfile1' profile ...
+Connected to parallel pool with 8 workers.
+mass of active sellers
+
+nsellerT =
+
+    0.8638
+
+total net profit seller
+
+tsellerT =
+
+    0.1383
+
+total net profit buyer
+
+tbuyerT =
+
+    0.2729
+
+double check profit share
+
+ans =
+
+    0.4112    0.4112
+
+mass of active sellers
+
+nseller1 =
+
+    0.6752
+
+total net profit seller
+
+tseller1 =
+
+    0.1398
+
+total net profit buyer
+
+tbuyer1 =
+
+    0.2715
+
+double check profit share
+
+ans =
+
+    0.4112    0.4112
+
+changes in number of sellers, changes in sales per seller
+
+ans =
+
+    0.2794   -0.2199
+
+changes in number of sellers, changes in sales per seller: data
+
+ans =
+
+    0.2947   -0.2083
+
+mass of active sellers
+
+nseller0 =
+
+    0.5677
+
+total net profit seller
+
+tseller0 =
+
+    0.1414
+
+total net profit buyer
+
+tbuyer0 =
+
+    0.2698
+
+double check profit share
+
+ans =
+
+    0.4112    0.4112
+
+changes in number of sellers
+
+ans =
+
+    0.1894
+
+changes in number of sellers: data
+
+ans =
+
+    0.1875
+
+mass of active suppliers
+
+nseller0 =
+
+    0.5677
+
+mass of active suppliers low type
+
+nseller10 =
+
+    0.4802
+
+mass of active suppliers high type
+
+nseller20 =
+
+    0.0874
+
+mass of active buyers
+
+nbuyer0 =
+
+    0.1898
+
+total net profit seller low type
+
+tseller10 =
+
+    0.0244
+
+total net profit seller high type
+
+tseller20 =
+
+    0.1171
+
+total net profit buyer
+
+tbuyer0 =
+
+    0.2698
+
+double check profit share
+
+ans =
+
+    0.4112    0.4112
+
+search cost for sellers
+
+type_css0 =
+
+    0.0100    0.0564
+
+search cost for buyers
+
+type_cbs0 =
+
+    0.0455
+
+suppliers per buyer
+
+spb0 =
+
+    1.6953
+
+high type suppliers per buyer
+
+s2pb0 =
+
+    0.5814
+
+mass of active suppliers
+
+nsellerT =
+
+    0.8638
+
+mass of active suppliers low type
+
+ans =
+
+    0.5724
+
+mass of active suppliers high type
+
+ans =
+
+    0.2429
+
+mass of active buyers
+
+ans =
+
+    0.1561
+
+total net profit seller low type
+
+ans =
+
+    0.2454
+
+total net profit seller high type
+
+ans =
+
+   -0.0780
+
+total net profit buyer
+
+ans =
+
+    0.0117
+
+double check profit share
+
+ans =
+
+    0.4112    0.4112
+
+search cost for sellers
+
+ans =
+
+    0.2422   -0.0489
+
+search cost for buyers
+
+ans =
+
+   -0.0477
+
+suppliers per buyer
+
+ans =
+
+    0.1787
+
+high type suppliers per buyer
+
+ans =
+
+   -0.0682
+
+consumer welfare change
+
+ans =
+
+    0.0688
+
+mass of active suppliers
+
+nseller1 =
+
+    0.6752
+
+mass of active suppliers low type
+
+ans =
+
+    0.2162
+
+mass of active suppliers high type
+
+ans =
+
+    0.0420
+
+mass of active buyers
+
+ans =
+
+    0.1667
+
+total net profit seller low type
+
+ans =
+
+   -0.0027
+
+total net profit seller high type
+
+ans =
+
+   -0.0138
+
+total net profit buyer
+
+ans =
+
+    0.0062
+
+double check profit share
+
+ans =
+
+    0.4112    0.4112
+
+search cost for sellers
+
+ans =
+
+    0.0009    0.0403
+
+search cost for buyers
+
+ans =
+
+   -0.1483
+
+suppliers per buyer
+
+ans =
+
+    0.1127
+
+high type suppliers per buyer
+
+ans =
+
+    0.1171
+
+consumer welfare change
+
+ans =
+
+    0.0771
+
+LaTeX table written to counterfactual_table.tex
+Starting parallel pool (parpool) using the 'LocalProfile1' profile ...
+Connected to parallel pool with 8 workers.
+total gross profit
+
+ans =
+
+    0.4112    0.4112
+
+consumer welfare change
+
+ans =
+
+   -0.0098
+
+tariff revenue
+
+ans =
+
+    0.0022
+
+total net profit seller low type
+total net profit seller high type
+total net profit buyer
+total quantity seller low type
+total quantity seller high type
+unit value changes
+
+ans =
+
+    0.0398
+
+trade volume upon impact
+
+ans =
+
+   -0.4324
+
+suppliers per buyer
+high type suppliers per buyer
+mass of active suppliers low type
+mass of active suppliers high type
+mass of active buyers
+LaTeX table written to counterfactual_tariff_table.tex
+Skipping tariff transition dynamics after Table 7 generation.
+Generating Figure 11a from saved tariff transition sequence...
+Generating Figure 11b from Stata event-study code...
+Generating mechanical-model appendix outputs...
+Using mechanical estimate from results (Optimization_2026_0209_0723_Run100of100.mat), fval=6721.821481
+Using mechanical estimate from results (Optimization_2026_0209_0723_Run100of100.mat), fval=6721.8215
+mass of active suppliers
+
+nsellerT =
+
+    3.8196
+
+total net profit seller
+
+tsellerT =
+
+     0
+
+total net profit buyer
+
+tbuyerT =
+
+     0
+
+double check profit share
+
+ans =
+
+    0.4112         0
+
+mass of active suppliers
+total net profit seller
+
+tseller1 =
+
+     0
+
+total net profit buyer
+
+tbuyer1 =
+
+     0
+
+double check profit share
+
+ans =
+
+    0.4186         0
+
+changes in number of sellers, changes in sales per seller
+
+ans =
+
+    0.1946   -0.1629
+
+mass of active sellers
+
+nseller0 =
+
+    3.1972
+
+total net profit seller
+
+tseller0 =
+
+     0
+
+total net profit buyer
+
+tbuyer0 =
+
+     0
+
+double check profit share
+
+ans =
+
+    0.4186         0
+
+changes in number of sellers
+
+ans =
+
+     0
+
+mass of active suppliers
+
+nseller0 =
+
+    3.1972
+
+mass of active suppliers low type
+
+nseller10 =
+
+    2.7628
+
+mass of active suppliers high type
+
+nseller20 =
+
+    0.4344
+
+mass of active buyers
+
+nbuyer0 =
+
+    0.6159
+
+suppliers per buyer
+
+spb0 =
+
+    7.1047
+
+high type suppliers per buyer
+
+s2pb0 =
+
+    1.5610
+
+mass of active suppliers
+
+nsellerT =
+
+    3.8196
+
+mass of active suppliers low type
+
+ans =
+
+    0.1944
+
+mass of active suppliers high type
+
+ans =
+
+    0.1960
+
+mass of active buyers
+
+ans =
+
+   4.9952e-04
+
+suppliers per buyer
+
+ans =
+
+    0.0434
+
+high type suppliers per buyer
+
+ans =
+
+   -0.1235
+
+mass of active suppliers
+
+nseller1 =
+
+    3.1972
+
+mass of active suppliers low type
+
+ans =
+
+     0
+
+mass of active suppliers high type
+
+ans =
+
+     0
+
+mass of active buyers
+
+ans =
+
+     0
+
+suppliers per buyer
+
+ans =
+
+     0
+
+high type suppliers per buyer
+
+ans =
+
+     0
+
+consumer welfare log change
+
+ans =
+
+    0.0030
+
+consumer welfare percent change
+
+ans =
+
+    0.0030
+
+LaTeX table written to output/tables/counterfactual_table_policy_only.tex
+Generating AAR appendix/comparison outputs...
+Policy-shock counterfactual (AAR, Section 7.1 calibration)
+  M^S pre  =  2.400, omega_H pre  =  0.043
+  M^S post =  4.200, omega_H post =  0.030
+  Low-type potential mass multiplier  =  1.774
+  High-type potential mass multiplier =  1.221
+  measure active low-productivity suppliers  pre =    0.1233  post =    0.1399  pct =  +13.50%%
+  measure active high-productivity suppliers pre =    0.0245  post =    0.0298  pct =  +21.59%%
+  measure active exporters                   pre =    0.1478  post =    0.1698  pct =  +14.84%%
+  share high-productivity among active exporters pre =    0.1661  post =    0.1758  pct =   +5.87%%
+  average exporter revenue                   pre =    6.7652  post =    5.8907  pct =  -12.93%%
+  consumer welfare level (1/P)               pre =    0.2834  post =    0.2990  pct =   +5.52%%
+Comparison outputs written to /home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/AAR/comparison
+Generating MP appendix model outputs...
+Writing standalone model parameter/moment tables...
+Regenerating finite-difference standard errors at saved parameter vectors...
+  Baseline standard errors...
+  Heterogeneous match-death standard errors...
+  MP match shock standard errors...
+  MP no dispersion standard errors...
+Standard-error generation log written to /home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/output/logs/standard_error_generation.log
+Running exact-fit checks at reported/saved parameter vectors...
+Replication audit values
+Root: /home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package
+
+
+ PARAMETER ESTIMATES: 
+ buyer search cost scalar     = 0.00916
+ seller search cost scalar    = 0.00916
+ buyer network parameter      = 0.32029
+ seller network parameter     = 0.23048
+ share of high-type sellers   = 0.03039
+ high type seller cost adv.   = 0.45423
+ buyer type dispersion        = 7.42782
+ seller to buyer ratio        = 4.20323
+ cross-store elasticity       = 2.43171
+
+ EXOGENOUSLY FIXED PARAMETERS:  
+ buyer search cost exponent   = 2.00000
+ seller search cost exponent  = 2.00000
+ seller bargaining parameter  = 0.50000
+ cross-product elasticity     = 4.35000
+
+ MECH MODEL COMPARISON OBJECTIVE FUNCTION = 6745.74799
+
+ OBJECTIVE FUNCTION = 10461.72797
+BASELINE_REPORTED_SAVED_FIT 10461.7279704665
+BASELINE_REPORTED_REEVALUATED_FIT 10461.7279704665
+BASELINE_REPORTED_DIFF 0
+
+MECHANICAL_SOURCE Optimization_2026_0209_0723_Run100of100.mat
+MECHANICAL_SAVED_FVAL 6721.82148097029
+MECHANICAL_REEVALUATED_FIT 6721.82148097044
+MECHANICAL_DIFF 1.48247636388987e-10
+
+HETERO_SAVED_FULL_OBJECTIVE 10867.1680543969
+HETERO_REEVALUATED_FULL_OBJECTIVE 10867.1680543969
+HETERO_FULL_DIFF 0
+HETERO_SAVED_OLD_OBJECTIVE 10804.1347330437
+HETERO_REEVALUATED_OLD_OBJECTIVE 10804.1347330437
+HETERO_OLD_DIFF 0
+HETERO_AVG_MATCH_DEATH 0.774
+HETERO_REG_COEF -0.00872425891853406
+HETERO_DELTA2 0.528658383350848
+
+AAR_SAVED_FVAL 2.57670673710858e-20
+AAR_REEVALUATED_FVAL 2.57670673710858e-20
+AAR_DIFF 0
+AAR_THETA 2.15071714528368 0.307116467481846 1.35289480290285 0.555193178570928
+AAR_MAX_ABS_MOMENT_DIFF 1.19733001291422e-10
+
+
+ PARAMETER ESTIMATES: 
+ buyer search cost scalar     = 0.00904
+ seller search cost scalar    = 0.00204
+ buyer network parameter      = 0.00000
+ share of high-type sellers   = 0.03406
+ high type seller cost adv.   = 0.05590
+ buyer type dispersion        = 6.52239
+ seller to buyer ratio        = 6.75791
+ cross-store elasticity       = 1.87707
+ arrival rate of match shocks = 4.00000
+ Match shock scale            = 0.04143
+ Fixed cost (frac of tot surp)= 0.00005
+
+ EXOGENOUSLY FIXED PARAMETERS:  
+ buyer search cost exponent   = 2.00000
+ seller search cost exponent  = 2.00000
+ seller bargaining parameter  = 0.50000
+ cross-product elasticity     = 1.87707
+
+ ENDOGENOUS VARIABLES:  
+Market tightness (Theta S)   = 0.11260
+ Market tightness (Theta B)   = 0.99986
+ active sellers per buyer     = 4.49270
+ seller search high           = 19.75372
+ seller search low            = 1.55116
+ buyer average search         = 1.65238
+ match death reg coef         = -0.00261
+
+ OBJECTIVE FUNCTION = 11522.24676
+
+ OLD OBJECTIVE FUNCTION = 10983.05534
+MP_MATCH_SHOCK_SOURCE /home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/baseline_counterfactuals_July_2024/MP model/Results2026/Baseline_MP/results/se_results_est_eta.mat
+MP_MATCH_SHOCK_X 0.009038151664477 0 0.00204163122552426 0.034058168327833 0.0559029929723989 6.52239094245822 6.75791247529339 1.87707470981516 0.0414283075035937 0.00149162865412426 
+MP_MATCH_SHOCK_SAVED_OUT 11522.2467639421
+MP_MATCH_SHOCK_REEVALUATED_OUT 11522.2467639423
+MP_MATCH_SHOCK_DIFF 2.05545802600682e-10
+MP_MATCH_SHOCK_SAVED_OUT_OLD 10983.0553372476
+MP_MATCH_SHOCK_REEVALUATED_OUT_OLD 10983.05534
+MP_MATCH_SHOCK_OLD_DIFF 2.7524492907105e-06
+
+
+ PARAMETER ESTIMATES: 
+ buyer search cost scalar     = 0.00711
+ seller search cost scalar    = 0.00186
+ buyer network parameter      = 0.00000
+ share of high-type sellers   = 0.03415
+ high type seller cost adv.   = 0.05509
+ buyer type dispersion        = 5.92073
+ seller to buyer ratio        = 8.06395
+ cross-store elasticity       = 1.86865
+ arrival rate of match shocks = 4.00000
+ Match shock scale            = 0.00000
+ Fixed cost (frac of tot surp)= 0.00007
+
+ EXOGENOUSLY FIXED PARAMETERS:  
+ buyer search cost exponent   = 2.00000
+ seller search cost exponent  = 2.00000
+ seller bargaining parameter  = 0.50000
+ cross-product elasticity     = 1.86865
+
+ ENDOGENOUS VARIABLES:  
+Market tightness (Theta S)   = 0.11605
+ Market tightness (Theta B)   = 0.99982
+ active sellers per buyer     = 4.57784
+ seller search high           = 19.35434
+ seller search low            = 1.52866
+ buyer average search         = 2.00050
+ match death reg coef         = -0.00000
+
+ OBJECTIVE FUNCTION = 11892.48910
+
+ OLD OBJECTIVE FUNCTION = 11007.42660
+MP_NO_DISPERSION_SOURCE /home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/baseline_counterfactuals_July_2024/MP model/Results2026/No_dispersion_MP/results/se_results_est_eta.mat
+MP_NO_DISPERSION_X 0.00710659521827582 0 0.00185835339710173 0.034147987253252 0.0550879354200356 5.92072946752918 8.06394530705426 1.8686540921449 1e-06 0.00182809422569718 
+MP_NO_DISPERSION_SAVED_OUT 11892.4891006442
+MP_NO_DISPERSION_REEVALUATED_OUT 11892.4891006443
+MP_NO_DISPERSION_DIFF 1.16415321826935e-10
+MP_NO_DISPERSION_SAVED_OUT_OLD 11007.4266006442
+MP_NO_DISPERSION_REEVALUATED_OUT_OLD 11007.4266
+MP_NO_DISPERSION_OLD_DIFF -6.44198735244572e-07
+
+Exact-fit check log written to /home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/output/logs/exact_fit_checks.log
+
+Finished: 24-Jun-2026 11:31:45
+Outputs are in /home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/output

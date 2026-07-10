@@ -1,0 +1,138 @@
+          Replicatton Package for “Two-sided Search in Internattonal Markets”
+
+          Authors: Jonathan Eaton, David Jinkins, James Tybout, and Daniel Yi Xu
+          This package contains the code, data files, saved parameter vectors, and generated outputs 
+          needed to replicate the Journal of Political Economy manuscript in 
+          docs/EJTX_2026_replication.pdf, with source in docs/EJTX_2026_replication.tex.
+
+          1. Data Availability
+          The main microdata source is the U.S. Census Bureau Longitudinal Firm Trade Transactions 
+          Database (LFTTD), accessed through Federal Statistical Research Data Center project 1109. 
+          These confidential shipment-level data are restricted by law and are not included in this public 
+          package.
+          The package does include the statistics we generated from the LFTTD that are needed for public 
+          replication of our structural model estimates and counterfactuals. These statistics were cleared 
+          by the Census Bureau’s Disclosure Review Board and Disclosure Avoidance Officers under 
+          requests 5488-2017-0109, 5623-2017-0228, 5952-2017-0808, and 11212-2024-0229.
+          The package also includes the Stata code that generated the LFTTD-based disclosed statistics (in 
+          `code/Stata_LFTTD_code/` ), as well as public data from the Bureau of Economic Analysis, 
+          World Trade Organization, Department of Commerce, Census Annual Retail Trade Survey, and 
+          U.S. International Trade Commission.
+
+          2. Statement About Rights
+          I certify that the author(s) of the manuscript have legitimate access to and permission to use 
+          the data used in this manuscript.
+          I certify that the author(s) of the manuscript have documented permission to 
+          redistribute/publish the data contained within this replication package. Appropriate 
+          permissions are documented in  LICENSE-CODE.txt  and  LICENSE-DATA-DOCS.txt , as 
+          applicable.
+
+          3. Package Contents
+           •  README.pdf : main replication instructions.
+           •  LICENSE-CODE.txt : MIT license for code files.
+           •  LICENSE-DATA-DOCS.txt : CC-BY 4.0 license for included data and documentation, 
+               except where original sources impose different terms.
+           •  docs/EJTX_2026_replication.pdf: replication manuscript used for 
+               the public package.
+           •  docs/EJTX_2026_replication.tex: LaTeX source for the replication 
+               manuscript.
+           •  docs/table_figure_source_map.xlsx : map from each paper and appendix 
+               table/figure to its code and data source.           •  code/matlab/ : MATLAB code for model solution, table generation, counterfactuals, 
+               figures, exact-fit checks, and standard errors.
+           •  code/Stata_LFTTD_code/ : Stata code used inside the FSRDC to construct restricted 
+               Census-derived statistics.
+           •  code/Stata_figure11b_event_study/ : Stata code for Figure 11b.
+           •  data/BEA_and_WTO--trade_and_production_aggregates/ : public data for 
+               Figure 1.
+           •  data/Census_LFTTD--disclosed_statistics_and_graphs/ : disclosure-
+               approved Census-derived files for Figures 2, 3, and 6 and Tables 1-4.
+           •  data/Dept_of_Commerce--apparel_imports_by_origin/ : public data for 
+               Figure 4.
+           •  data/Census_ARTS--apparel_retailer_aggregates/ : public ARTS data used 
+               for apparel retailer cost/revenue calibration.
+           •  data/US_ITC_figure11b_event_study/ : event-study inputs for Figure 11b.
+           •  data/intermediate/ : compact full-precision MP appendix parameter file.
+           •  output/ : generated paper-facing tables, figures, and logs.
+
+          4. Soffware
+          The package was prepared on Linux. The public replication uses:
+           •  MATLAB R2025b with Global Optimization Toolbox and Parallel Computing Toolbox.
+           •  Stata for Figure 11b, with SSC packages  ebalance ,  ftools ,  require , and  reghdfe .
+           •  LibreOffice only if regenerating Word/Excel documentation files.
+          Optional tools for documentation rebuilds are LibreOffice and pandoc.
+
+          5. Public Replicatton Run
+          Start MATLAB from the package root and run:
+          cd('/path/to/replication_package')
+          addpath(genpath(fullfile(pwd, 'code', 'matlab')))
+          run_all_replication('fast')
+          The fast run regenerates or collects the paper-facing outputs in:
+           •  output/figures/paper/
+           •  output/tables/paper/
+           •  output/logs/
+          The fast run does not reestimate the structural models. Instead, it loads the paper-reported or 
+          saved best-fit parameter vectors, evaluates the model code at those vectors, regenerates 
+          standard errors for Tables 5, 9, and 10, and recreates the paper-facing tables and figures.
+          Figure 11b is generated by Stata. To run it directly from the package root:
+          ssc install ebalance, replace
+          ssc install ftools, replace          ssc install require, replace
+          ssc install reghdfe, replace
+          do code/Stata_figure11b_event_study/event_study.do
+
+          6. Expected Running Time
+          Expected running time on the Linux workstation used to prepare the package:
+           •  run_all_replication('fast') : about 8-10 minutes.
+           •  setenv('EJTX_TEST_RUN','1'); run_all_replication('full') : about 15-
+               20 minutes. This checks full-estimation entry points without running optimizers to 
+               completion.
+           •  run_all_replication('full')  without  EJTX_TEST_RUN : several days to multiple 
+               weeks, depending on hardware and toolbox performance.
+          The  full  mode is not required to reproduce the paper tables and figures because the package 
+          includes the reported best-fit parameter vectors and exact-fit checks.
+
+          7. Restricted Census Code
+          The raw LFTTD data cannot be distributed. Approved researchers can run the Census 
+          construction scripts inside an FSRDC.
+          Inside the FSRDC, copy  code/Stata_LFTTD_code/  to the project program directory and edit 
+          the path globals at the top of  00_do_apparel_shell_abbrev.do :
+          global Data       "/path/to/restricted/source/data"
+          global Dofile     "/path/to/code/Stata_LFTTD_code"
+          global Output     "/path/to/private/generated/data"
+          global OutputTemp "/path/to/private/generated/temp"
+          global Result     "/path/to/private/disclosure/request/files"
+          global OutputLog  "/path/to/private/logs"
+          Then run:
+          do "$Dofile/00_do_apparel_shell_abbrev.do"
+          The Census Bureau has updated raw LFTTD file names since the code was originally run, so 
+          users inside an FSRDC may need to update raw-data file references. Outputs from the restricted 
+          environment must pass Census disclosure review before they can be moved into the public 
+          package.
+
+          8. Output Checks
+          The recommended fast run writes:
+           •  output/logs/run_all_replication_fast.log
+           •  output/logs/exact_fit_checks.log
+           •  output/logs/standard_error_generation.log           •  output/tables/paper/
+               model_fit_checks_for_tables_05_09_10_11_12.csv
+           •  output/tables/paper/
+               generated_standard_errors_at_saved_parameters.csv
+          The exact-fit checks evaluate the packaged MATLAB model code at the reported/saved 
+          parameter vectors and report saved-versus-regenerated objective values. The standard-error 
+          log reports regenerated standard errors for the relevant model tables.
+
+          9. Data Citattons
+           •  U.S. Census Bureau, Longitudinal Firm Trade Transactions Database and related Census 
+               business microdata, accessed through FSRDC project 1109.
+           •  U.S. Census Bureau, disclosure-approved output files for approval requests 5488-2017-
+               0109, 5623-2017-0228, 5952-2017-0808, and 11212-2024-0229.
+           •  U.S. Census Bureau, Annual Retail Trade Survey.
+           •  Bureau of Economic Analysis, domestic apparel production series.
+           •  World Trade Organization, apparel trade series.
+           •  U.S. Department of Commerce, apparel imports by origin.
+           •  U.S. International Trade Commission, Section 301 tariff coverage and apparel-sector 
+               impacts.
+
+          10. Omitted Materials
+          The only omitted materials are confidential Census microdata and non-disclosable derivatives. 
+          The public package includes the disclosure-approved statistics and artifacts needed to 
+          reproduce the public-facing model estimates, fit checks, figures, tables, and counterfactuals.

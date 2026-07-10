@@ -1,0 +1,223 @@
+Standard-error generation at saved parameter vectors
+Root: /home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package
+
+===== Baseline standard errors =====
+
+NaNflag =
+
+     0
+
+
+se_table =
+
+  8×4 <a href="matlab:helpPopup('table')" style="font-weight:bold">table</a>
+
+      <strong>param_names</strong>      <strong>param_vec</strong>     <strong>stderr</strong>      <strong>z_ratio</strong>
+    <strong>_______________</strong>    <strong>_________</strong>    <strong>_________</strong>    <strong>_______</strong>
+
+    {'cb0 and cs0'}    0.0091605     0.003027    3.0263 
+    {'gamB'       }      0.32029     0.041072    7.7982 
+    {'gamS'       }      0.23048     0.045852    5.0267 
+    {'w2_x'       }     0.030393    0.0018644    16.302 
+    {'Delta'      }      0.45423    0.0062955    72.151 
+    {'var ln(mu)' }       7.4278       2.5079    2.9617 
+    {'Ms/Mb'      }       4.2032      0.72832    5.7711 
+    {'eta'        }       2.4317      0.14148    17.188 
+
+[Warning: Saving an onCleanup object does not preserve its cleanup task. If
+loaded, this object will not contain a cleanup task.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('onCleanup/saveobj', '/home/veryshuai/MATLAB/R2025b/toolbox/matlab/lang/onCleanup.m', 23)" style="font-weight:bold">onCleanup/saveobj</a> (<a href="matlab: opentoline('/home/veryshuai/MATLAB/R2025b/toolbox/matlab/lang/onCleanup.m',23,0)">line 23</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('std_errors', '/tmp/tp1a8b3764_7f39_4132_8cf8_b76c6e761013/baseline_no_NsNb_target/std_errors.m', 72)" style="font-weight:bold">std_errors</a> (<a href="matlab: opentoline('/tmp/tp1a8b3764_7f39_4132_8cf8_b76c6e761013/baseline_no_NsNb_target/std_errors.m',72,0)">line 72</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('generate_standard_errors_at_saved_parameters>runBaselineStandardErrors', '/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/generate_standard_errors_at_saved_parameters.m', 59)" style="font-weight:bold">generate_standard_errors_at_saved_parameters>runBaselineStandardErrors</a> (<a href="matlab: opentoline('/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/generate_standard_errors_at_saved_parameters.m',59,0)">line 59</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('generate_standard_errors_at_saved_parameters', '/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/generate_standard_errors_at_saved_parameters.m', 24)" style="font-weight:bold">generate_standard_errors_at_saved_parameters</a> (<a href="matlab: opentoline('/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/generate_standard_errors_at_saved_parameters.m',24,0)">line 24</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_replication>write_standalone_model_tables', '/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/run_all_replication.m', 217)" style="font-weight:bold">run_all_replication>write_standalone_model_tables</a> (<a href="matlab: opentoline('/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/run_all_replication.m',217,0)">line 217</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_replication', '/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/run_all_replication.m', 47)" style="font-weight:bold">run_all_replication</a> (<a href="matlab: opentoline('/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/run_all_replication.m',47,0)">line 47</a>)] 
+
+
+ PARAMETER ESTIMATES: 
+ buyer search cost scalar     = 0.00916
+ seller search cost scalar    = 0.00916
+ buyer network parameter      = 0.32029
+ seller network parameter     = 0.23048
+ share of high-type sellers   = 0.03039
+ high type seller cost adv.   = 0.45423
+ buyer type dispersion        = 7.42782
+ seller to buyer ratio        = 4.20323
+ cross-store elasticity       = 2.43171
+
+ EXOGENOUSLY FIXED PARAMETERS:  
+ buyer search cost exponent   = 2.00000
+ seller search cost exponent  = 2.00000
+ seller bargaining parameter  = 0.50000
+ cross-product elasticity     = 4.35000
+
+ MECH MODEL COMPARISON OBJECTIVE FUNCTION = 6745.74799
+
+ OBJECTIVE FUNCTION = 10461.72797
+
+===== Heterogeneous match-death standard errors =====
+
+NaNflag =
+
+     0
+
+
+se_table =
+
+  9×4 <a href="matlab:helpPopup('table')" style="font-weight:bold">table</a>
+
+         <strong>param_names</strong>          <strong>param_vec</strong>     <strong>stderr</strong>      <strong>z_ratio</strong>
+    <strong>______________________</strong>    <strong>_________</strong>    <strong>_________</strong>    <strong>_______</strong>
+
+    {'cb0 and cs0'       }    0.0080015    0.0033227    2.4081 
+    {'gamB'              }      0.31141     0.050625    6.1514 
+    {'gamS'              }      0.17663     0.068097    2.5938 
+    {'w2_x'              }     0.030623    0.0014894    20.561 
+    {'Delta'             }      0.45704      0.00632    72.316 
+    {'var ln(mu)'        }       7.1212       3.1782    2.2406 
+    {'Ms'                }       4.4955       1.0124    4.4405 
+    {'eta'               }       2.4354      0.17716    13.746 
+    {'match_death hazard'}      0.56321    0.0096485    58.373 
+
+
+
+===== MP match shock standard errors =====
+
+NaNflag =
+
+     0
+
+
+se_table =
+
+  9×4 <a href="matlab:helpPopup('table')" style="font-weight:bold">table</a>
+
+      <strong>param_names</strong>      <strong>param_vec</strong>      <strong>stderr</strong>       <strong>z_ratio</strong> 
+    <strong>_______________</strong>    <strong>_________</strong>    <strong>__________</strong>    <strong>_________</strong>
+
+    {'cb0'        }    0.0090382     0.0014118        6.402
+    {'cs0'        }    0.0020416       0.22536    0.0090595
+    {'w2_x'       }     0.034058    0.00034294       99.313
+    {'c2'         }     0.055903    0.00077617       72.024
+    {'var ln(mu)' }       6.5224       0.25418       25.661
+    {'Ms/Mb'      }       6.7579       0.21144       31.961
+    {'subs elas'  }       1.8771     0.0034057       551.15
+    {'match_scale'}     0.041428        0.5724     0.072376
+    {'F'          }    0.0014916      0.000563       2.6494
+
+
+
+ PARAMETER ESTIMATES: 
+ buyer search cost scalar     = 0.00904
+ seller search cost scalar    = 0.00204
+ buyer network parameter      = 0.00000
+ share of high-type sellers   = 0.03406
+ high type seller cost adv.   = 0.05590
+ buyer type dispersion        = 6.52239
+ seller to buyer ratio        = 6.75791
+ cross-store elasticity       = 1.87707
+ arrival rate of match shocks = 4.00000
+ Match shock scale            = 0.04143
+ Fixed cost (frac of tot surp)= 0.00005
+
+ EXOGENOUSLY FIXED PARAMETERS:  
+ buyer search cost exponent   = 2.00000
+ seller search cost exponent  = 2.00000
+ seller bargaining parameter  = 0.50000
+ cross-product elasticity     = 1.87707
+
+ ENDOGENOUS VARIABLES:  
+Market tightness (Theta S)   = 0.11260
+ Market tightness (Theta B)   = 0.99986
+ active sellers per buyer     = 4.49270
+ seller search high           = 19.75372
+ seller search low            = 1.55116
+ buyer average search         = 1.65238
+ match death reg coef         = -0.00261
+
+ OBJECTIVE FUNCTION = 11522.24676
+
+ OLD OBJECTIVE FUNCTION = 10983.05534
+
+===== MP no dispersion standard errors =====
+
+NaNflag =
+
+     0
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.883285e-17.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('std_errors', '/tmp/tp170103cd_f08f_4fc1_9de5_7b61f5094fdf/calibration_no_gamma_s/std_errors.m', 74)" style="font-weight:bold">std_errors</a> (<a href="matlab: opentoline('/tmp/tp170103cd_f08f_4fc1_9de5_7b61f5094fdf/calibration_no_gamma_s/std_errors.m',74,0)">line 74</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('generate_standard_errors_at_saved_parameters>runMpStandardErrors', '/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/generate_standard_errors_at_saved_parameters.m', 130)" style="font-weight:bold">generate_standard_errors_at_saved_parameters>runMpStandardErrors</a> (<a href="matlab: opentoline('/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/generate_standard_errors_at_saved_parameters.m',130,0)">line 130</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('generate_standard_errors_at_saved_parameters', '/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/generate_standard_errors_at_saved_parameters.m', 37)" style="font-weight:bold">generate_standard_errors_at_saved_parameters</a> (<a href="matlab: opentoline('/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/generate_standard_errors_at_saved_parameters.m',37,0)">line 37</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_replication>write_standalone_model_tables', '/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/run_all_replication.m', 217)" style="font-weight:bold">run_all_replication>write_standalone_model_tables</a> (<a href="matlab: opentoline('/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/run_all_replication.m',217,0)">line 217</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_replication', '/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/run_all_replication.m', 47)" style="font-weight:bold">run_all_replication</a> (<a href="matlab: opentoline('/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/run_all_replication.m',47,0)">line 47</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.883285e-17.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('std_errors', '/tmp/tp170103cd_f08f_4fc1_9de5_7b61f5094fdf/calibration_no_gamma_s/std_errors.m', 74)" style="font-weight:bold">std_errors</a> (<a href="matlab: opentoline('/tmp/tp170103cd_f08f_4fc1_9de5_7b61f5094fdf/calibration_no_gamma_s/std_errors.m',74,0)">line 74</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('generate_standard_errors_at_saved_parameters>runMpStandardErrors', '/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/generate_standard_errors_at_saved_parameters.m', 130)" style="font-weight:bold">generate_standard_errors_at_saved_parameters>runMpStandardErrors</a> (<a href="matlab: opentoline('/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/generate_standard_errors_at_saved_parameters.m',130,0)">line 130</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('generate_standard_errors_at_saved_parameters', '/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/generate_standard_errors_at_saved_parameters.m', 37)" style="font-weight:bold">generate_standard_errors_at_saved_parameters</a> (<a href="matlab: opentoline('/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/generate_standard_errors_at_saved_parameters.m',37,0)">line 37</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_replication>write_standalone_model_tables', '/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/run_all_replication.m', 217)" style="font-weight:bold">run_all_replication>write_standalone_model_tables</a> (<a href="matlab: opentoline('/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/run_all_replication.m',217,0)">line 217</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_replication', '/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/run_all_replication.m', 47)" style="font-weight:bold">run_all_replication</a> (<a href="matlab: opentoline('/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/run_all_replication.m',47,0)">line 47</a>)
+] 
+
+se_table =
+
+  9×4 <a href="matlab:helpPopup('table')" style="font-weight:bold">table</a>
+
+      <strong>param_names</strong>      <strong>param_vec</strong>      <strong>stderr</strong>       <strong>z_ratio</strong>  
+    <strong>_______________</strong>    <strong>_________</strong>    <strong>__________</strong>    <strong>__________</strong>
+
+    {'cb0'        }    0.0071066     0.0014197        5.0056
+    {'cs0'        }    0.0018584         0.183      0.010155
+    {'w2_x'       }     0.034148    0.00034223        99.782
+    {'c2'         }     0.055088    0.00077639        70.954
+    {'var ln(mu)' }       5.9207       0.23751        24.928
+    {'Ms/Mb'      }       8.0639       0.40004        20.158
+    {'subs elas'  }       1.8687     0.0035039        533.31
+    {'match_scale'}        1e-06         14381    6.9537e-11
+    {'F'          }    0.0018281    0.00054021         3.384
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.883285e-17.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('std_errors', '/tmp/tp170103cd_f08f_4fc1_9de5_7b61f5094fdf/calibration_no_gamma_s/std_errors.m', 86)" style="font-weight:bold">std_errors</a> (<a href="matlab: opentoline('/tmp/tp170103cd_f08f_4fc1_9de5_7b61f5094fdf/calibration_no_gamma_s/std_errors.m',86,0)">line 86</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('generate_standard_errors_at_saved_parameters>runMpStandardErrors', '/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/generate_standard_errors_at_saved_parameters.m', 130)" style="font-weight:bold">generate_standard_errors_at_saved_parameters>runMpStandardErrors</a> (<a href="matlab: opentoline('/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/generate_standard_errors_at_saved_parameters.m',130,0)">line 130</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('generate_standard_errors_at_saved_parameters', '/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/generate_standard_errors_at_saved_parameters.m', 37)" style="font-weight:bold">generate_standard_errors_at_saved_parameters</a> (<a href="matlab: opentoline('/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/generate_standard_errors_at_saved_parameters.m',37,0)">line 37</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_replication>write_standalone_model_tables', '/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/run_all_replication.m', 217)" style="font-weight:bold">run_all_replication>write_standalone_model_tables</a> (<a href="matlab: opentoline('/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/run_all_replication.m',217,0)">line 217</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_replication', '/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/run_all_replication.m', 47)" style="font-weight:bold">run_all_replication</a> (<a href="matlab: opentoline('/home/veryshuai/CBS Dropbox/David Jinkins/Networks project/replication_package/code/matlab/run_all_replication.m',47,0)">line 47</a>)
+] 
+
+
+ PARAMETER ESTIMATES: 
+ buyer search cost scalar     = 0.00711
+ seller search cost scalar    = 0.00186
+ buyer network parameter      = 0.00000
+ share of high-type sellers   = 0.03415
+ high type seller cost adv.   = 0.05509
+ buyer type dispersion        = 5.92073
+ seller to buyer ratio        = 8.06395
+ cross-store elasticity       = 1.86865
+ arrival rate of match shocks = 4.00000
+ Match shock scale            = 0.00000
+ Fixed cost (frac of tot surp)= 0.00007
+
+ EXOGENOUSLY FIXED PARAMETERS:  
+ buyer search cost exponent   = 2.00000
+ seller search cost exponent  = 2.00000
+ seller bargaining parameter  = 0.50000
+ cross-product elasticity     = 1.86865
+
+ ENDOGENOUS VARIABLES:  
+Market tightness (Theta S)   = 0.11605
+ Market tightness (Theta B)   = 0.99982
+ active sellers per buyer     = 4.57784
+ seller search high           = 19.35434
+ seller search low            = 1.52866
+ buyer average search         = 2.00050
+ match death reg coef         = -0.00000
+
+ OBJECTIVE FUNCTION = 11892.48910
+
+ OLD OBJECTIVE FUNCTION = 11007.42660
+
