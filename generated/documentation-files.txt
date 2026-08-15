@@ -1,6 +1,6 @@
-/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/README.pdf
-/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/matlab/DiscreteApprox.pdf
-/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/docs/EJTX_2026_replication.pdf
-/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/output/figures/paper/figure_01_apparel_consumption_imports.pdf
-/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/output/figures/paper/figure_08_baseline_model_fit.pdf
-/Users/florianoswald/actions-runner/_work/JPE-Jinkins-20220045/JPE-Jinkins-20220045/replication-package/code/Stata_LFTTD_code/Summary of LFTTD code.docx
+/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20220045-2/replication-package/README.pdf
+/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20220045-2/replication-package/code/matlab/DiscreteApprox.pdf
+/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20220045-2/replication-package/docs/EJTX_2026_replication.pdf
+/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20220045-2/replication-package/output/figures/paper/figure_01_apparel_consumption_imports.pdf
+/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20220045-2/replication-package/output/figures/paper/figure_08_baseline_model_fit.pdf
+/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20220045-2/replication-package/code/Stata_LFTTD_code/Summary of LFTTD code.docx
