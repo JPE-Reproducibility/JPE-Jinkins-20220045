@@ -40,28 +40,28 @@ In assessing compliance with our [Data and Code Availability Policy](https://www
   - [x] Statement about Rights - Part 1: Right to use the data (e.g. *did the authors lawfully obtain the data*)
   - [x] Statement about Rights - Part 2: Right to publish the data (e.g. *are human subjects involved and did permission been granted to publish their data?*)
   - [x] License for Data (optional, but recommended)
-  - [ ] Details on each Data Source
-- [ ] Dataset list
-- [ ] Computational requirements
+  - [x] Details on each Data Source
+- [x] Dataset list
+- [x] Computational requirements
   - [x] Software Requirements
   - [ ] Controlled Randomness (as necessary)
-  - [ ] Memory, Runtime, and Storage Requirements
+  - [x] Memory, Runtime, and Storage Requirements
 - [x] Description of programs/code
   - [ ] License for Code (Optional, but recommended) 
-- [ ] {REPLICATOR} to Replicators
+- [x] {REPLICATOR} to Replicators
   - [ ] Details (as necessary)
-- [ ] List of tables and programs
+- [x] List of tables and programs
 - [ ] References (Optional, but recommended) 
 
 Comments:
 
-      - Details on each data source are missing; please list all data sources separately and indicate whether they are publicly available. If they are publicly available, please state where and how they can be found. If the paper only uses statistics generated from a restricted dataset, please elaborate on this further. Also indicate if and where in the code the final datasets are prepared or if the code only uses pre-made datasets. 
-      
-      
-      - The description and instructions for the code are rather short. Please elaborate more on the scripts that need to be run. Also provide more information on the different modes of the MATLAB script and the consequences of each mode. Provide clear instructions on how to run the code.
-      
-      
-      - Please provide an overview of all the tables and figures produced by the code, indicating which part of the code generates each output.
+     -   The README has improved substantially. The authors now provide much more information on the datasets, the derived variables, and the figures and tables included in the package. The use of the restricted US Census dataset, and the derivatives that are allowed to be distributed, is clearly explained. Only missing the citations in the README and paper. It only says that the data sources should be cited.  
+
+      - The instructions for running the code have also improved significantly. No further questions remain on that part.
+
+     - The authors included an overview of all tables and figures and their contents. What is still missing, however, is a clear reference to the script and the specific lines that generated each output.
+     
+    
 
 # High-level Description of Research Project
 
@@ -100,43 +100,34 @@ For any data that cannot be provided as part of the replication package, please 
 ## Data Sources
 
 
-| file/name                               | public | private | DOI/URL | Access described | cited readme | cited paper |
-| ----                                     | ---    | ---     | ---     | ---             | ----         | ----        | 
-| U.S. Census LFTTD + microdata            | no     | yes     | no      | no              | yes          | yes         |
-| Census disclosure-approved outputs       | no     | yes     | no      | no              | yes          | yes         |
-| Annual Retail Trade Survey               | yes    | no      | no      | no              | yes          | yes         |
-| BEA apparel production                   | yes    | no      | no      | no              | yes          | yes         |
-| WTO apparel trade                        | yes    | no      | no      | no              | yes          | yes         |
-| Commerce apparel imports                 | yes    | no      | no      | no              | yes          | yes         |
-| USITC Section 301 data                   | yes    | no      | no      | no              | yes          | yes         |
+| file/name                                               | public | private | DOI/URL | Access described | cited readme | cited paper |
+|---------------------------------------------------------|--------|---------|---------|------------------|--------------|-------------|
+| U.S. Census LFTTD + linked business microdata           | no     | yes     | yes     | yes              | no           | no          |
+| BEA Gross Output by Industry (apparel, 1992–2015)       | yes    | no      | yes     | yes              | no           | no          |
+| WTO clothing imports and exports (1992–2015)            | yes    | no      | yes     | yes              | no           | no          |
+| OTEXA apparel imports by origin (1996–2011)             | yes    | no      | yes     | yes              | no           | no          |
+| Annual Retail Trade Survey (ARTS, 1992–2022)            | yes    | no      | yes     | yes              | no           | no          |
+| USITC DataWeb annual imports (2017–2025)                | yes    | no      | yes     | yes              | no           | no          |
+| USITC annual tariffs & Section 301 analysis             | yes    | no      | yes     | yes              | no           | no          |
 
 
 # Requirements 
 
 - [x] README is in TXT, MD, or PDF format
 - [x] README is accessible at the root of the package (not inside a folder)
-- [ ] Title conforms to guidance (starts with "Data and Code for: Title of Paper" or "Code for: Title of Paper", is properly capitalized)
+- [x] Title conforms to guidance (starts with "Data and Code for: Title of Paper" or "Code for: Title of Paper", is properly capitalized)
 - [x] Authors (with affiliations) are listed in the same order as on the paper
 
-> {REQUIRED} Please review the title of the deposit as per our guidelines.
 
 
 ## Stated Requirements
 
-- [ ] No requirements specified
-- [x] Software Requirements specified as follows:
-
-
-    - MATLAB R2025b with Global Optimization Toolbox and Parallel Computing Toolbox.
-    - Stata for Figure 11b, with SSC packages ebalance, ftools, require, and reghdfe.
-    - LibreOffice only if regenerating Word/Excel documentation files.
-
-- [ ] Computational Requirements specified as follows:
-  - Cluster size, etc.
-- [ ] Time Requirements specified as follows:
-  - Fast mode is 8-10 minutes, Full (1) is 15-20 minutes and Full (2) is several days to multiple weeks. 
-
-- [ ] Requirements are complete.
+The package was verified on 64-bit Linux with MATLAB R2025b, StataNow 19.5, and 8 MATLAB 
+parallel workers. Required MATLAB products are MATLAB, Global Optimization Toolbox, and 
+Parallel Computing Toolbox. Required Stata community packages are ebalance, ftools, 
+require, and reghdfe.  The release archive is about 270 MB and expands to about 505 MB; 
+allow at least 2 GB of free working space because MATLAB creates temporary working copies. A fast run takes about 8–10 minutes on the verification workstation.
+All commands below assume the current directory is the package root. Paths are constructed relative to the package. Existing files under output/ are overwritten when regenerated.
 
 
 For missing requirements, see the list of required changes in @sec-findings
@@ -158,7 +149,7 @@ For missing requirements, see the list of required changes in @sec-findings
 
 ## Code description
 
-There is one master-matlab file and one separate Stata do-file. As said earlier there is no overview in the README that explains which parts of the scripts produce specific figures or tables.
+There is one master-matlab file and one separate Stata do-file. As said earlier there is no overview in the README that explains which lines of the script produce specific figures or tables.
 
 {{< include generated/report-cloc.md >}}
 
@@ -179,42 +170,22 @@ There is one master-matlab file and one separate Stata do-file. As said earlier 
 
 - Downloaded code and data from dropbox
 - Opened MATLAB per README
-- Used the 'fast'track for this replication
+- Used the 'Bounded full-workflow' test for this replication
 - ran the master-script and additional stata do-file per README
 
 
 # Findings {#sec-findings}
 
-- Running `run_all_replication.m` initially failed with a MATLAB licensing error when the code tried to launch a separate MATLAB process via `system('matlab -batch ...')`. I believe this was not a bug in the replication code, but an environment issue of Nuvolos: my session already had a valid license, but spawning a new process this way doesn't seem to inherit it, so the new process couldn't find one.
 
-Fix: replaced the external `system()` call with `eval()`, running the script directly within the already-licensed session instead of starting a new process. This resolved the error:
 
-```matlab
-function runMatlabScript(scriptDir, scriptName)
-oldDir = pwd;
-cd(scriptDir);
-try
-    runIsolated(scriptName);
-catch ME
-    cd(oldDir);
-    error('MATLAB generator failed: %s\n%s', scriptName, ME.message);
-end
-cd(oldDir);
-end
-
-function runIsolated(scriptName)
-eval(scriptName);
-end
-```
-
-- Did not encounter any further issues related to code itself, everything seemed to run smoothly. 
+- The issue I encountered earlier was resolved, did not encounter another issue.  
 
 
 ## Missing Requirements
 
 - [ ] Software Requirements 
-  - [x] Stata
-    - [x] Version
+  - [ ] Stata
+    - [ ] Version
     - Packages go here
   - [ ] Matlab
     - [ ] Version
@@ -225,7 +196,7 @@ end
     - [ ] Version
     - Python package go here
   - [ ] REPLACE ME WITH OTHER
-- [x] Computational Requirements specified as follows:
+- [ ] Computational Requirements specified as follows:
   - Cluster size, disk size, memory size, etc.
 - [ ] Time Requirements 
   - Length of necessary computation (hours, weeks, etc.)
@@ -241,45 +212,26 @@ No raw data preparation code is included in this replication package. The author
 
 ## Tables and Figures
 
-- Most of the generated tables and figures match the output in the paper. However, there are two where the output shows some discrepancies.
-Example:
-
-- Figure 4: Graph is completely different compared to the one in the paper.
-
-![Paper version](images/Figure4paper.png)
-
-![Replicated version](images/Figure4.png)
-
-- Table 13: I can't make the connection (only a few coefficients) between the generated output and the table in the paper. Please elaborate further.
-
-![Replicated version 1](images/table13a.png)
-
-
-![Replicated version 2](images/table13b.png)
-
-
-![Paper version](images/table13paper.png)
+- Discrepancies found in the first version are now resolved, all generated output matches the output of the paper. 
 
 
 ## Other Issues
 
-- The code and replication itself seem almost ready to go, but the README needs further work.
-
-
+- Some small issues in the README remain. 
 # Classification
 
 
-- [ ] full reproduction
+- [x] full reproduction
 - [ ] full reproduction with minor issues
-- [x] partial reproduction (see above)
+- [] partial reproduction (see above)
 - [ ] not able to reproduce most or all of the results (reasons see above)
 
 ## Reason for incomplete reproducibility
 
 > {REPLICATOR}: mark the reasons here why full reproduciblity was not achieved, and enter this information in new issue on the github repo of this package. When results are fully reproduced, leave this section here, and mark "None".
 
-- [ ] None.
-- [x] `Discrepancy in output` (either figures or numbers in tables or text differ)
+- [x] None.
+- [ ] `Discrepancy in output` (either figures or numbers in tables or text differ)
 - [ ] `Bugs in code` that were fixable by the replicator (but should be fixed in the final deposit)
 - [ ] `Code missing`, in particular if it prevented the replicator from completing the reproducibility check
   - [ ] `Data preparation code missing` should be checked if the code missing seems to be data preparation code
